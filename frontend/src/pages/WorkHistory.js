@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import { LocalStorage, TableHeaders, TableRow, InfoTable } from "reactRoot/Components";
+import { LocalStorage, TableHeaders, TableRow, InfoTable } from "../Components";
 
 class WorkHistory extends Component {
 	constructor(props) {
@@ -92,6 +91,4 @@ class WorkHistory extends Component {
 	}
 }
 
-ReactDOM.render((
-  <WorkHistory />
-), document.getElementById('workhistory-react-root'))
+export default WorkHistory;

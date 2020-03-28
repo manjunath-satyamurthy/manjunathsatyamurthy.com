@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import { Modal } from "reactRoot/Components";
+import { Modal } from "../Components";
 
 
 let getValidURL = url => {
@@ -285,6 +284,4 @@ class Photos extends Component {
 	}
 }
 
-ReactDOM.render((
-  <Photos />
-), document.getElementById('photos-react-root'))
+export default Photos;

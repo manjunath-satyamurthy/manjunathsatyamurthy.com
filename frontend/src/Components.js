@@ -6,7 +6,6 @@ class LocalStorage {
   static localStorageExpiry = () => {
     var now = new Date().getTime()
     var setupTime = localStorage.getItem('setupTime');
-    console.log(now, setupTime)
     if (setupTime == null) {
         localStorage.setItem('setupTime', now)
     } else {

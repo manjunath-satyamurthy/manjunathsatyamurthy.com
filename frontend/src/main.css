@@ -136,7 +136,7 @@ a {
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('../../main/images/calvinandhobbes.jpeg');
+    ), url('./images/calvinandhobbes.jpeg');
 }
 
 .technologies-background::after {
@@ -144,7 +144,7 @@ a {
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('../../main/images/technologies.jpg');
+    ), url('./images/technologies.jpg');
     height: 200px;
 }
 
@@ -152,7 +152,7 @@ a {
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('../../main/images/companies.jpg');
+    ), url('./images/companies.jpg');
     height: 200px;
 }
 
@@ -160,7 +160,7 @@ a {
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('../../main/images/education.jpg');
+    ), url('./images/education.jpg');
     height: 200px;
 }
 
@@ -168,7 +168,7 @@ a {
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('../../main/images/projects.jpg');
+    ), url('./images/projects.jpg');
     height: 200px;
 }
 
@@ -178,7 +178,7 @@ a {
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('../../main/images/photos.jpg');
+    ), url('./images/photos.jpg');
     height: 200px;
 }
 
@@ -186,7 +186,7 @@ a {
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('../../main/images/contact.jpg');
+    ), url('./images/contact.jpg');
     height: 200px;
 }
 
@@ -194,7 +194,7 @@ a {
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('../../main/images/credits.jpg');
+    ), url('./images/credits.jpg');
     height: 200px;
 }
 

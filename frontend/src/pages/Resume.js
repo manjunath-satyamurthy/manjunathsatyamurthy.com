@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import { LocalStorage, ControlButtons } from "reactRoot/Components";
+import { LocalStorage, ControlButtons } from "../Components";
 
 class Resume extends Component {
 	constructor(props) {
@@ -50,6 +49,15 @@ class Resume extends Component {
 		});
 	};
 	render() {
+
+		const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+			navigator.userAgent)
+		
+		if (isMobile && this.state.resumeURL) {
+			window.open(process.env["environment"] == "production" ? this.state.resumeURL : "http://192.168.0.165:8000/"+this.state.resumeURL)
+			return null
+		}
+
 		let resumePDF = !this.state.isEdited
 			? <object
 					data={this.state.resumeURL}
@@ -117,6 +125,4 @@ class Resume extends Component {
 	}
 }
 
-ReactDOM.render((
-  <Resume />
-), document.getElementById('resume-react-root'))
+export default Resume;

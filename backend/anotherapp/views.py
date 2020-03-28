@@ -97,10 +97,16 @@ def update_homepage(request):
 def get_homepage(request):
 	if request.method == 'GET':
 		user = RootUser.objects.get(username=settings.ROOT_USER)
-		return JsonResponse({
-			"profile_photo_url": user.profile_photo.url,
-			"description": user.description
-		})
+		try:
+			return JsonResponse({
+				"profile_photo_url": user.profile_photo.url,
+				"description": user.description
+			})
+		except Exception as e:
+			return JsonResponse({
+				"profile_photo_url": "",
+				"description": ""
+			})
 
 
 @csrf_exempt

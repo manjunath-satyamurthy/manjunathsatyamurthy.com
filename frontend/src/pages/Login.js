@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import { LocalStorage } from "reactRoot/Components";
+import { LocalStorage } from "../Components";
 
 
 const Inputs = props => {
@@ -112,6 +111,4 @@ class Login extends Component {
 }
 
 
-ReactDOM.render((
-  <Login />
-), document.getElementById('login-react-root'))
+export default Login;

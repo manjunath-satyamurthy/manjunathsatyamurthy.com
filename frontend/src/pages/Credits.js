@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import { TableRow, InfoTable } from "reactRoot/Components";
+import { TableRow, InfoTable } from "../Components";
 
 
 class Credits extends Component {
@@ -24,16 +23,14 @@ class Credits extends Component {
   	)
 
     return (
+      <div>
+      <div className="background credits-background"></div>
+      <h1 className="page-heading">Credits</h1>
     	<div className="credit-contact-table">
     		<InfoTable theaders={header} tbody={body} />
     	</div>
+      </div>
     )
   }}
 
-ReactDOM.render((
-  <div>
-    <div className="background credits-background"></div>
-    <h1 className="page-heading">Credits</h1>
-    <Credits />
-  </div>
-), document.getElementById('credits-react-root'))
+export default Credits;

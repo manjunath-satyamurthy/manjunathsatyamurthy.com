@@ -37,7 +37,7 @@ if IS_PRODUCTION:
     if os.environ.get('IS_DEBUG_TRUE'):
         DEBUG=True
 else:
-    ALLOWED_HOSTS = ["192.168.0.59", "127.0.0.1", "localhost"]
+    ALLOWED_HOSTS = ["192.168.0.165", "127.0.0.1", "localhost"]
     DEBUG = True
 
 # Application definition
@@ -91,9 +91,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysite',
-        'USER': 'manju',
-        'PASSWORD': '1234',
-        'HOST': 'localhost'
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': '127.0.0.1'
     }
 }
 if IS_PRODUCTION:
@@ -107,7 +107,6 @@ if IS_PRODUCTION:
     DATABASES["default"]["PASSWORD"] = password
     DATABASES["default"]["HOST"] = host
     DATABASES["default"]["NAME"] = name
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators

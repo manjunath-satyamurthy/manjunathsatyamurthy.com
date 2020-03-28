@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import { LocalStorage, TableHeaders, TableRow, InfoTable } from "reactRoot/Components";
+import { LocalStorage, TableHeaders, TableRow, InfoTable } from "../Components";
 
 class Education extends Component {
 	constructor(props) {
@@ -94,7 +93,4 @@ class Education extends Component {
 	}
 }
 
-
-ReactDOM.render((
-  <Education />
-), document.getElementById('education-react-root'))
+export default Education;

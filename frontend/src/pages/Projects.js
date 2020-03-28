@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import { LocalStorage, TableHeaders, TableRow, InfoTable } from "reactRoot/Components";
+import { LocalStorage, TableHeaders, TableRow, InfoTable } from "../Components";
 
 class Projects extends Component {
 	constructor(props) {
@@ -77,6 +76,4 @@ class Projects extends Component {
 	}
 }
 
-ReactDOM.render((
-  <Projects />
-), document.getElementById('projects-react-root'))
+export default Projects;

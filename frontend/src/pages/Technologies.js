@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import { LocalStorage, TableHeaders, TableRow, InfoTable } from "reactRoot/Components";
+import { LocalStorage, TableHeaders, TableRow, InfoTable } from "../Components";
 
 class Technologies extends Component {
 	constructor(props) {
@@ -88,6 +87,4 @@ class Technologies extends Component {
 	}
 }
 
-ReactDOM.render((
-  <Technologies />
-), document.getElementById('technologies-react-root'))
+export default Technologies;
