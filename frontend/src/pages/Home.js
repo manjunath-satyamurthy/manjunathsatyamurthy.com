@@ -264,7 +264,7 @@ class Home extends Component {
               headingType="center my-name"
               id="manjunath-satyamurthy"
               content="Manjunath Satyamurthy"
-              subContent="Software Developer @ Tesa Scribos Gmbh."
+              subContent="Software Developer @ SAP Graph"
             />
             <TextDescription
               descriptionType="welcome-text"
